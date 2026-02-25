@@ -34,7 +34,7 @@ int main() {
     }
 
     if (pid == 0) {
-        // ---- Child process ----
+        // Child process 
         close(fd[0]); // close read end
 
         int childMin = arr[N / 2];
@@ -55,7 +55,7 @@ int main() {
         close(fd[1]);
         return 0;
     } else {
-        // ---- Parent process ----
+        // Parent process 
         close(fd[1]); // close write end
 
         int parentMin = arr[0];
